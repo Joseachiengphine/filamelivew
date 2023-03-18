@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\StudentsResource\Pages;
+namespace App\Filament\Resources\StudentResource\Pages;
 
-use App\Filament\Resources\StudentsResource;
+use App\Filament\Resources\StudentResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
 
 class ListStudents extends ListRecords
 {
-    protected static string $resource = StudentsResource::class;
+    protected static string $resource = StudentResource::class;
 
     protected function getActions(): array
     {
