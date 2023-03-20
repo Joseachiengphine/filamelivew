@@ -83,12 +83,7 @@ class StudentResource extends Resource
                     ->sortable()
                     ->searchable()
                     ->toggleable(),
-                // TextColumn::make('address')
-                //     ->sortable()
-                //     ->searchable()
-                //     ->toggleable()
-                //     ->wrap(),
-
+                
                 TextColumn::make('class.name')
                     ->sortable()
                     ->searchable(),
@@ -143,9 +138,7 @@ class StudentResource extends Resource
                     ->url(fn (Student $record) => route('student.pdf.download', $record))
                     ->openUrlInNewTab(),
 
-                Action::make('View Qr Code')
-                    ->icon('heroicon-o-qrcode')
-                    ->url(fn (Student $record) => static::getUrl('qr-code', $record)),
+                
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
@@ -169,7 +162,6 @@ class StudentResource extends Resource
             'index' => Pages\ListStudents::route('/'),
             'create' => Pages\CreateStudent::route('/create'),
             'edit' => Pages\EditStudent::route('/{record}/edit'),
-            'qr-code' => Pages\ViewQrCode::route('/{record}/qr-code'),
         ];
     }
 

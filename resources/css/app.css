@@ -1,3 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import "../../vendor/filament/filament/resources/css/app.css";
+ 
+* {
+    font-family: "Rubik", sans-serif;
+    font-size: 0.9rem;
+}
+ 
+.filament-sidebar-nav{
+    @apply bg-blue-800 bg-gradient-to-tl from-blue-600 to-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:from-gray-800 dark
+} 
+    .filament-sidebar-nav .border-t {
+    @apply border-blue-600;
+    }
+    
+    .filament-sidebar-item {
+    @apply text-white;
+    }
+    
+    .filament-sidebar-item .inline-flex {
+    @apply text-blue-50 bg-blue-700 dark:bg-gray-900 dark:text-white;
+    }
+    
+    .filament-sidebar-group svg {
+    @apply text-blue-300;
+    }
+    
+    .tracking-wider {
+    @apply text-sm text-blue-200;
+    }
+    
+    .filament-brand {
+    @apply text-blue-700;
+    }
+    
+    .filament-main {
+    @apply bg-blue-50 dark:bg-gray-900 dark:border-gray-700;
+    }
+    
+    .filament-main-content {
+    @apply text-gray-600 dark:text-gray-400;
+    }

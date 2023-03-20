@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources\StudentResource\Pages;
 
-use App\Filament\Resources\StudentResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
+use App\Filament\Resources\StudentResource;
 
 class ListStudents extends ListRecords
 {

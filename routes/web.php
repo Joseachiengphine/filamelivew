@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DownloadPDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/{record}/pdf/download', [DownloadPDFController::class, 'download'])->name('student.pdf.download');

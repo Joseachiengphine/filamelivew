@@ -35,11 +35,6 @@ class RoleResource extends Resource
                         TextInput::make('name')
                             ->unique(ignoreRecord: true)
                             ->required(),
-                        Select::make('permissions')
-                            ->multiple()
-                            ->relationship('permissions', 'name')
-                            ->preload()
-                            ->required()
                     ])
             ]);
     }

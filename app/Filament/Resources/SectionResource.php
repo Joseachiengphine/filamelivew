@@ -26,7 +26,7 @@ class SectionResource extends Resource
 
     protected static ?string $navigationGroup = 'Academic Management';
 
-    protected static ?string $navigationIcon = 'heroicon-o-table';
+    protected static ?string $navigationIcon = 'heroicon-o-collection';
 
     public static function form(Form $form): Form
     {
